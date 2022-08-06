@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="Css/Estilos.css">
+    <link rel="stylesheet" href="Css/Formulario.css">
+</head>
+<body>
+    <header>
+        <div class="container logo-nav-container">
+            <div class="logo">
+                <img src="Imagenes/tic-logo.png">
+                <h2 class="nombrelogo">Tecnologías de la Información y Comunicación</h2>
+            </div>
+            <span class="menu-icon">Ver menú</span>
+            <nav>
+                <ul>
+                    <li><a target="_self" href="index.html">La WEB</a></li>
+                    <li><a target="_self" href="Frontend.html">Frontend y Backend</a></li>
+                    <li><a target="_self" href="ServiciosYEtapas.html">Servicios Y Etapas</a></li>
+                    <li><a target="_self" href="Formulario.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <form autocomplete="off" id="formulario">
+        <fieldset class="form-register">
+            <h2>Formulario de Registro</h2><br><br>
+            <label class="labels" for="nombre">Nombre: </label>
+            <input class="controls" name='nombre' id="nombre" type='text' placeholder="Ej. Rosa" required autofocus><br><br>
+
+            <label class="labels" for="apellidos">Apellidos: </label>
+            <input class="controls" name='apellidos' id='apellidos' type='text' placeholder="Ej. Martínez Rosas" required><br><br>
+
+            <label class="labels" for="select">Sexo: </label>
+            <select class="controls" name="select" id="select">
+                <option value="Hombre">Hombre</option> 
+                <option value="Mujer">Mujer</option>
+            </select><br><br>
+            
+            <label class="labels" for="edad">Edad: </label>
+            <input class="controls" type='number' max="99" min="1" name='edad' id="edad" placeholder="Ej. 25" required><br><br>
+        
+            <label class="labels" for="email">Correo Electronico: </label>
+            <input class="controls" name='email' id="email" type='email' placeholder="ejemplo@gmail.com" required><br><br>
+
+            <label class="labels" for="contra">Contraseña: </label>
+            <input class="controls" name='contra' id="contra" type='password' required><br><br>
+
+            <textarea class="controls" name="textarea" id="textarea" rows="10" cols="50" placeholder="Escribe la razón por la cual quieres registrarte aquí"></textarea><br>
+
+            <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p><br><br>
+
+            <button class="botons" type="button" onclick="validar()">Registrarse</button>
+            <button class="botons" type="button" onclick="limpiar()">Eliminar</button>
+            <p><a href="#">¿Ya tienes cuenta?</a></p>
+        </fieldset>
+    </form>
+
+    <article class="artic3">
+        <div class="titulos"><h2>ENCUENTRANOS</h2><br></div>
+        <div class="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15084.332912493624!2d-98.14539186481932!3d19.0600779850997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc1c9a30530ab%3A0xefd33e2f1a6ca5a2!2sUniversidad%20Tecnol%C3%B3gica%20de%20Puebla!5e0!3m2!1ses!2smx!4v1655780470932!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </article>
+
+<footer>
+       
+    <div class="container-footer-all">
+     
+         <div class="container-body">
+
+            <div class="colum1">
+                <h3>Mas informacion de la página</h3>
+
+                <p>Esta página esta hecha con el proposito de proporcionar información acerca de la creaciónde la www
+                    y toda su historia, te brindamos la información tanto del creador y algunas otras tecnologías que te
+                    pueden servir en un futuro.
+                </p>
+            </div>
+
+            <div class="colum2">
+
+                <h3>Redes Sociales</h3>
+
+                <div class="row">
+                    <a target="_blank" href="https://www.facebook.com/noe.alvarado.50746444/"><img src="Imagenes/facebook.png"></a>
+                    <label>Siguenos en Facebook</label>
+                </div>
+                <div class="row">
+                    <a target="_blank" href="https://www.instagram.com/noealvarado_/"><img src="Imagenes/instagram.png"></a>
+                    <label>Siguenos en Instagram</label>
+                </div>
+                <div class="row">
+                    <a target="_blank" href="https://www.facebook.com/jorgeheriberto.zepeda"><img src="Imagenes/facebook.png"></a>
+                    <label>Siguenos en Facebook</label>
+                </div>
+                <div class="row">
+                    <a target="_blank" href="https://www.instagram.com/hzerozri/"><img src="Imagenes/instagram.png"></a>
+                    <label>Siguenos en Instagram</label>
+                </div>
+
+            </div>
+
+            <div class="colum3">
+
+                <h3>Información Contactos</h3>
+
+                <div class="row2">
+                    <img src="Imagenes/smartphone.png">
+                    <label>+52 2225167400</label>
+                </div>
+                <div class="row2">
+                    <img src="Imagenes/contact.png">
+                    <label>alvaradonoe428@gmail.com</label>
+                </div>
+                <div class="row2">
+                    <img src="Imagenes/smartphone.png">
+                    <label>+52 2212520935</label>
+                </div>
+                <div class="row2">
+                    <img src="Imagenes/contact.png"  >
+                    <label>jon48886@gmail.com</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-footer">
+        <div class="footer">
+            <div class="copyright">
+                © 2022 Todos los Derechos Reservados | <a href="http://www.utpuebla.edu.mx/ti/tsu1.html">UTP Tics</a>
+            </div>
+
+            <div class="information">
+                <a href="">Información de la página</a> | <a href="">Privacidad y Politica</a> | <a href="">Terminos y Condiciones</a>
+            </div>
+         </div>
+    </div>
+
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="JS/Scripts.js"></script>
+    <script src="JS/Formulario.js"></script>
+</body>
+</html>
